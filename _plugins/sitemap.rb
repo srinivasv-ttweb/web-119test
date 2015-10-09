@@ -25,7 +25,7 @@ module Jekyll
 	    private
 
 	    def save(sitemap)
-	        File.open("_site/sitemap.json", "w") do |f|
+	        File.open("sitemap.json", "w") do |f|
 	          f.write(sitemap.to_json)
 	        end
 	    end
