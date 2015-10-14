@@ -12,11 +12,10 @@ module Jekyll
 	        languages.each do |lang|
 	            lang == default_lang ? lang = '' : lang = '/' + lang
 	            pages.each do |page|
-	            	page_full_name = page.dir + page.name
-	                if sitemap.key?(page_full_name)
-	                    sitemap[page_full_name] << lang + page.url
+	                if sitemap.key?(page.path)
+	                    sitemap[page.path] << lang + page.url
 	          		else
-	            		sitemap.store(page_full_name, [ lang + page.url ])
+	            		sitemap.store(page.path, [ lang + page.url ])
 	          		end
 	        	end
 	      	end
