@@ -1,11 +1,1 @@
-[
-  {
-    "_template": "html",
-    "content": "<b>H</b>TML Content"
-  },
-  {
-    "_template": "href",
-    "url": "https://www.google.com",
-    "name": "Goooogle"
-  }
-]
+[{"_template":"html","content":"<b>H</b>TML Content"},{"_template":"href","url":"https://www.google.com","name":"Yandex"}]
